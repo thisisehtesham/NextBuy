@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🛒 Next.js E-commerce App
+-----------------------
+This is a e-commerce web application built with **Next.js 15** and **Tailwind CSS**. The app supports product browsing, shopping cart, checkout, order management, user authentication, and an admin panel for managing products and orders.
 
-## Getting Started
 
-First, run the development server:
+Technologies Used:
+-------------------
+- Framework: Next.js 15 (App Router)
+- Styling: Tailwind CSS
+- Authentication: JWT and cookies
+- Storage: localStorage for cart, in-memory DB
+- Testing: Vitest and Testing Library
+- Routing: File-based routing (App directory)
+- State Management: React Context API (`AuthContext`, `CartContext`)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+user Features:
+--------------
+- Register, login, logout, and manage profile
+- View and filter products with search, category, and price range
+- Add/remove items from cart (persists using localStorage)
+- Checkout with shipping/billing info
+- Order success page and order history
+- Leave product reviews and view average ratings
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Admin Features:
+----------------
+- Secure admin login
+- Manage products: Add, edit, delete, and upload images
+- Manage orders: View all orders, update status (pending, shipped, delivered, cancelled)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+How to Run Locally:
+--------------------
+1. Make sure you have Node.js installed (version 16 or higher)
+2. Clone this repository or download the code
+3. Open a terminal in the project folder
 
-To learn more about Next.js, take a look at the following resources:
+4. Install dependencies by running:
+-- npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Start the development server by running:
+-- npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+6. Open your browser and visit:
+-- http://localhost:3000
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Available Scripts:
+-------------------
+• npm run dev - Starts the development server
+• npm run build - Builds the app for production
+• npm run test - To run tests
+• npm run test:coverage - For test coverage
